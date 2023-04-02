@@ -1,0 +1,33 @@
+#Install New apps
+Write-Output "Installing Apps"
+$apps = @(
+    @{name = "Valve.Steam" }, 
+    @{name = "Mozilla.Firefox" }, 
+    @{name = "Microsoft.VisualStudioCode" }, 
+    @{name = "OBSProject.OBSStudio" }, 
+    @{name = "Spotify.Spotify" }, 
+    @{name = "Discord.Discord.Canary" }, 
+    @{name = "7zip.7zip" }, 
+    @{name = "ProtonTechnologies.ProtonVPN" },
+    @{name = "Elgato.WaveLink"  },
+    @{name = "Eugeny.Tabby" },
+    @{name = "StartIsBack.StartAllBack" },
+    @{name = "9PF4KZ2VN4W9" },
+    @{name = "Bitwarden.Bitwarden" },
+    @{name = "CPUID.CPU-Z"}
+);
+Foreach ($app in $apps) {
+    $listApp = winget list --exact -q $app.name --accept-source-agreements 
+    if (![String]::Join("", $listApp).Contains($app.name)) {
+        Write-host "Installing:" $app.name
+        if ($app.source -ne $null) {
+            winget install --exact --silent $app.name --source $app.source --accept-package-agreements
+        }
+        else {
+            winget install --exact --silent $app.name --accept-package-agreements
+        }
+    }
+    else {
+        Write-host "Skipping Install of " $app.name
+    }
+}
