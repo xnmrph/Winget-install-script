@@ -14,6 +14,7 @@ $apps = @(
     @{name = "StartIsBack.StartAllBack" },
     @{name = "9PF4KZ2VN4W9" },
     @{name = "Bitwarden.Bitwarden" },
+    @{name = "Avidemux.Avidemux"},
     @{name = "CPUID.CPU-Z"}
 );
 Foreach ($app in $apps) {
