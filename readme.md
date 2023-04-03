@@ -22,4 +22,5 @@ PowerShell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.
 - TranslucentTB
 - Bitwarden
 - CPU-Z
+- Avidemux
 
