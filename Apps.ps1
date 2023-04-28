@@ -15,7 +15,8 @@ $apps = @(
    // @{name = "9PF4KZ2VN4W9" },
     @{name = "Bitwarden.Bitwarden" },
     @{name = "Avidemux.Avidemux"},
-    @{name = "CPUID.CPU-Z"}
+    @{name = "CPUID.CPU-Z"},
+    @{name + "RiotGames.Valorant.EU"}
 );
 Foreach ($app in $apps) {
     $listApp = winget list --exact -q $app.name --accept-source-agreements 
