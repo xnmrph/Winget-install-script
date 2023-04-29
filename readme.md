@@ -18,8 +18,6 @@ PowerShell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.
 - ProtonVPN
 - Elgato WaveLink
 - Tabby
-- StartIsBack
-- TranslucentTB
 - Bitwarden
 - CPU-Z
 - Avidemux
