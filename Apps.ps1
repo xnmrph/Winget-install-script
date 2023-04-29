@@ -12,9 +12,9 @@ $apps = @(
     @{name = "Elgato.WaveLink"  },
     @{name = "Eugeny.Tabby" },
     @{name = "Bitwarden.Bitwarden" },
-    @{name = "Avidemux.Avidemux"},
-    @{name = "CPUID.CPU-Z"},
-    @{name = "RiotGames.Valorant.EU"}
+    @{name = "Avidemux.Avidemux" },
+    @{name = "CPUID.CPU-Z" },
+    @{name = "RiotGames.Valorant.EU" }
 );
 Foreach ($app in $apps) {
     $listApp = winget list --exact -q $app.name --accept-source-agreements 
