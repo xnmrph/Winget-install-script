@@ -2,11 +2,13 @@
 Write-Output "Installing Apps"
 $apps = @(
     @{name = "Valve.Steam" }, 
-    @{name = "Mozilla.Firefox" }, 
+    @{name = "Microsoft.Edge.dev" },
+    @{name = "Microsoft.Powertoys" }, 
+    @{name = "CodecGuide.K-LiteCodecPack.Standard" }, 
     @{name = "Microsoft.VisualStudioCode" }, 
     @{name = "OBSProject.OBSStudio.Pre-release" }, 
     @{name = "Spotify.Spotify" }, 
-    @{name = "Discord.Discord.Canary" }, 
+    @{name = "Discord.Discord" }, 
     @{name = "7zip.7zip" }, 
     @{name = "ProtonTechnologies.ProtonVPN" },
     @{name = "Elgato.WaveLink"  },
