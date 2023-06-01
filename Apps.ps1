@@ -2,8 +2,8 @@
 Write-Output "Installing Apps"
 $apps = @(
     @{name = "Valve.Steam" }, 
-    @{name = "Microsoft.Edge.dev" },
-    @{name = "Microsoft.Powertoys" }, 
+    @{name = "Microsoft.Edge.Dev" },
+    @{name = "Microsoft.PowerToys --source winget" }, 
     @{name = "CodecGuide.K-LiteCodecPack.Standard" }, 
     @{name = "Microsoft.VisualStudioCode" }, 
     @{name = "OBSProject.OBSStudio.Pre-release" }, 
@@ -12,10 +12,8 @@ $apps = @(
     @{name = "7zip.7zip" }, 
     @{name = "ProtonTechnologies.ProtonVPN" },
     @{name = "Elgato.WaveLink"  },
-    @{name = "Eugeny.Tabby" },
     @{name = "Bitwarden.Bitwarden" },
     @{name = "Avidemux.Avidemux" },
-    @{name = "CPUID.CPU-Z" },
     @{name = "RiotGames.Valorant.EU" }
 );
 Foreach ($app in $apps) {
