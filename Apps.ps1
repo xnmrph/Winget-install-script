@@ -10,7 +10,6 @@ $apps = @(
     @{name = "Spotify.Spotify" }, 
     @{name = "Discord.Discord" }, 
     @{name = "7zip.7zip" }, 
-    @{name = "ProtonTechnologies.ProtonVPN" },
     @{name = "Elgato.WaveLink"  },
     @{name = "Bitwarden.Bitwarden" },
     @{name = "Avidemux.Avidemux" },
